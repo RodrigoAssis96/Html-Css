@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            margin: 10px;
+            background-color: black;
+            padding-left: 5px;
+            color: white;
+        }
+        main{
+            background-color: blueviolet;
+        }
+        nav{
+            background-color: blue;
+            padding: 3px;
+        }
+       nav > a {
+        text-decoration: none;
+        color: bisque;
+       }
+       nav > a:hover{
+        text-decoration: underline;
+       }
+       footer{
+        background-color: black;
+        color: white;
+       }
+       div#bola{
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+       }
+    </style>
+</head>
+<body>
+    <header>                                        
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+      </nav>
+    </header>
+    <main>
+        <section id="noticias"> 
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam assumenda, molestias maiores optio dicta iure eveniet magni. Molestias corporis accusantium optio, ea quidem beatae suscipit exercitationem impedit tempora libero soluta.</p>
+                <aside>
+                    <p>Escrito por Rodrigo</p>
+                 
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>desenvolvido por Rodrigo</p>
+
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

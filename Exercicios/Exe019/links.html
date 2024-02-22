@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkblue;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:active{
+            color: chartreuse;
+        }
+        a::after{
+            content:'[link]' ;
+            color: rgb(5, 10, 10);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://twitter.com/sirrodrigo__" target="_blank">Twitter</a></li>
+        <li><a href="https://www.facebook.com/rodrigo.assis.359" target="_blank">Facebook</a></li>
+        <li><a href="https://www.youtube.com/@jeniasmr" target="_blank">Youtube</a></li>
+    </ul>
+</body>
+</html>
