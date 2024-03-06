@@ -8,70 +8,98 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         } td, th{
             border: 1px solid black;
             padding: 5px;
         } thead, tfoot{
             background-color: yellow;
             color: black;
+        } td.numero{
+            text-align: right;
+        } caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-bottom: 5px;
+        } tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        } thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption><strong>População por estado</strong></caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45.519.119</td>
+                <td class="numero">45.519.119</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21.580.442</td>
+                <td class="numero">21.580.442</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17.970.612</td>
+                <td class="numero">17.970.612</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14.141.626</td>
+                <td class="numero">14.141.626</td>
             </tr>
             <tr>
                 <td>Parana</td>
-                <td>11.444.380</td>
+                <td class="numero">11.444.380</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td>10.882.965</td>
+                <td class="numero">10.882.965</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>9.058.931</td>
+                <td class="numero">9.058.931</td>
             </tr>
             <tr>
                 <td>Ceara</td>
-                <td>8.794.957</td>
+                <td class="numero">8.794.957</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td>8.121.025</td>
+                <td class="numero">8.121.025</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
-                <td>7.610.361</td>
+                <td class="numero">7.610.361</td>
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
-            <td>00000</td>
+            <th scope="row">Total de habitantes</th>
+            <td class="numero">00000</td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos error ut libero praesentium? Perspiciatis, officia, obcaecati, quaerat ex temporibus ipsam corporis facilis nesciunt nostrum facere qui impedit cum nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio itaque optio dolor quisquam ipsam quidem consequatur numquam, mollitia, corporis temporibus a accusamus, in est aliquid provident et alias. Debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem impedit eius unde quibusdam, repellendus, doloremque aut mollitia corrupti eveniet esse fugiat, eaque et. Fuga, totam! Ipsam tempora blanditiis laudantium ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum et excepturi in dicta ex ab accusantium illum provident, deleniti laboriosam quam vel voluptatem veritatis laudantium laborum voluptate impedit vitae doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, soluta, fuga cupiditate expedita error distinctio explicabo veniam inventore eos laudantium blanditiis est. Optio, voluptate? Eligendi illo ratione explicabo earum porro?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos error ut libero praesentium? Perspiciatis, officia, obcaecati, quaerat ex temporibus ipsam corporis facilis nesciunt nostrum facere qui impedit cum nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio itaque optio dolor quisquam ipsam quidem consequatur numquam, mollitia, corporis temporibus a accusamus, in est aliquid provident et alias. Debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem impedit eius unde quibusdam, repellendus, doloremque aut mollitia corrupti eveniet esse fugiat, eaque et. Fuga, totam! Ipsam tempora blanditiis laudantium ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum et excepturi in dicta ex ab accusantium illum provident, deleniti laboriosam quam vel voluptatem veritatis laudantium laborum voluptate impedit vitae doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, soluta, fuga cupiditate expedita error distinctio explicabo veniam inventore eos laudantium blanditiis est. Optio, voluptate? Eligendi illo ratione explicabo earum porro?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos error ut libero praesentium? Perspiciatis, officia, obcaecati, quaerat ex temporibus ipsam corporis facilis nesciunt nostrum facere qui impedit cum nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio itaque optio dolor quisquam ipsam quidem consequatur numquam, mollitia, corporis temporibus a accusamus, in est aliquid provident et alias. Debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem impedit eius unde quibusdam, repellendus, doloremque aut mollitia corrupti eveniet esse fugiat, eaque et. Fuga, totam! Ipsam tempora blanditiis laudantium ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum et excepturi in dicta ex ab accusantium illum provident, deleniti laboriosam quam vel voluptatem veritatis laudantium laborum voluptate impedit vitae doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, soluta, fuga cupiditate expedita error distinctio explicabo veniam inventore eos laudantium blanditiis est. Optio, voluptate? Eligendi illo ratione explicabo earum porro?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos error ut libero praesentium? Perspiciatis, officia, obcaecati, quaerat ex temporibus ipsam corporis facilis nesciunt nostrum facere qui impedit cum nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio itaque optio dolor quisquam ipsam quidem consequatur numquam, mollitia, corporis temporibus a accusamus, in est aliquid provident et alias. Debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem impedit eius unde quibusdam, repellendus, doloremque aut mollitia corrupti eveniet esse fugiat, eaque et. Fuga, totam! Ipsam tempora blanditiis laudantium ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum et excepturi in dicta ex ab accusantium illum provident, deleniti laboriosam quam vel voluptatem veritatis laudantium laborum voluptate impedit vitae doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, soluta, fuga cupiditate expedita error distinctio explicabo veniam inventore eos laudantium blanditiis est. Optio, voluptate? Eligendi illo ratione explicabo earum porro?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos error ut libero praesentium? Perspiciatis, officia, obcaecati, quaerat ex temporibus ipsam corporis facilis nesciunt nostrum facere qui impedit cum nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio itaque optio dolor quisquam ipsam quidem consequatur numquam, mollitia, corporis temporibus a accusamus, in est aliquid provident et alias. Debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem impedit eius unde quibusdam, repellendus, doloremque aut mollitia corrupti eveniet esse fugiat, eaque et. Fuga, totam! Ipsam tempora blanditiis laudantium ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum et excepturi in dicta ex ab accusantium illum provident, deleniti laboriosam quam vel voluptatem veritatis laudantium laborum voluptate impedit vitae doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, soluta, fuga cupiditate expedita error distinctio explicabo veniam inventore eos laudantium blanditiis est. Optio, voluptate? Eligendi illo ratione explicabo earum porro?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos error ut libero praesentium? Perspiciatis, officia, obcaecati, quaerat ex temporibus ipsam corporis facilis nesciunt nostrum facere qui impedit cum nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio itaque optio dolor quisquam ipsam quidem consequatur numquam, mollitia, corporis temporibus a accusamus, in est aliquid provident et alias. Debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem impedit eius unde quibusdam, repellendus, doloremque aut mollitia corrupti eveniet esse fugiat, eaque et. Fuga, totam! Ipsam tempora blanditiis laudantium ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum et excepturi in dicta ex ab accusantium illum provident, deleniti laboriosam quam vel voluptatem veritatis laudantium laborum voluptate impedit vitae doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, soluta, fuga cupiditate expedita error distinctio explicabo veniam inventore eos laudantium blanditiis est. Optio, voluptate? Eligendi illo ratione explicabo earum porro?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos error ut libero praesentium? Perspiciatis, officia, obcaecati, quaerat ex temporibus ipsam corporis facilis nesciunt nostrum facere qui impedit cum nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio itaque optio dolor quisquam ipsam quidem consequatur numquam, mollitia, corporis temporibus a accusamus, in est aliquid provident et alias. Debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem impedit eius unde quibusdam, repellendus, doloremque aut mollitia corrupti eveniet esse fugiat, eaque et. Fuga, totam! Ipsam tempora blanditiis laudantium ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum et excepturi in dicta ex ab accusantium illum provident, deleniti laboriosam quam vel voluptatem veritatis laudantium laborum voluptate impedit vitae doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, soluta, fuga cupiditate expedita error distinctio explicabo veniam inventore eos laudantium blanditiis est. Optio, voluptate? Eligendi illo ratione explicabo earum porro?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos error ut libero praesentium? Perspiciatis, officia, obcaecati, quaerat ex temporibus ipsam corporis facilis nesciunt nostrum facere qui impedit cum nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio itaque optio dolor quisquam ipsam quidem consequatur numquam, mollitia, corporis temporibus a accusamus, in est aliquid provident et alias. Debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem impedit eius unde quibusdam, repellendus, doloremque aut mollitia corrupti eveniet esse fugiat, eaque et. Fuga, totam! Ipsam tempora blanditiis laudantium ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum et excepturi in dicta ex ab accusantium illum provident, deleniti laboriosam quam vel voluptatem veritatis laudantium laborum voluptate impedit vitae doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, soluta, fuga cupiditate expedita error distinctio explicabo veniam inventore eos laudantium blanditiis est. Optio, voluptate? Eligendi illo ratione explicabo earum porro?</p>
 </body>
 </html>
