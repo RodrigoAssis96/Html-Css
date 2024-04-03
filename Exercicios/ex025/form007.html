@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <p>
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+            <optgroup label="Região Centro Oeste">
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="GO">Goias</option>
+                <option value="MT">Mato Grosso</option>
+            </optgroup>
+
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="imsg">Mensagem</label> <br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="Profissão" id="iprof" list="listprof">
+        <datalist id="listprof">
+            <option value="Prof">Professor</option>
+            <option value="Prog">Programador</option>
+        </datalist>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
